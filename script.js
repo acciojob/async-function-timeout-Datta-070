@@ -9,7 +9,7 @@ async function showMessageWithDelay(){
 	const delay=parseInt(delayInput.value, 10);
 
 if(!text || isNaN(delay) || delay<=0){
-	outputDiv.innerText='Invalid Input';
+	outputDiv.innerText='Invalid input';
 	return;
 }
 
