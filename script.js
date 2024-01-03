@@ -7,7 +7,6 @@ const outputDiv = document.getElementById('output');
 async function showMessageWithDelay(){
 	const text=textInput.value;
 	const delay=parseInt(delayInput.value, 10);
-}
 
 if(!text || isNaN(delay) || delay<=0){
 	outputDiv.innerText='Invalid Input';
@@ -17,5 +16,6 @@ if(!text || isNaN(delay) || delay<=0){
 await new promise(resolve => setTimeOut(resolve, delay));
 
 outputDiv.innerText=text;
+}
 
 submitButton.addEventListener('click', showMessageWithDelay);
